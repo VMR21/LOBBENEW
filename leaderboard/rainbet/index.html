@@ -566,8 +566,8 @@
         async function fetchLeaderboardData() {
             try {
                 const [leaderboardResponse, countdownResponse] = await Promise.all([
-                    fetch('/api/leaderboard/rainbet'),
-                    fetch('/api/countdown/rainbet')
+                    fetch('https://lobbedata.onrender.com/api/leaderboard/rainbet'),
+                    fetch('https://lobbedata.onrender.com/api/countdown/rainbet')
                 ]);
 
                 if (!leaderboardResponse.ok || !countdownResponse.ok) {
